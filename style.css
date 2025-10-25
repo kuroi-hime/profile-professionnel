@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --ff: 'Inter', Serif;
+    --h1-size: 1.476rem;
+    --h2-size: 1.383rem;
+    --p-size: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+}
+
+h1 {
+    font-size: var(--h1-size);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: var(--h2-size);
+    font-weight: 600;
+}
+
+.container {
+    width: 500px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.gradient_backgroun {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.gradient_backgroun > div {
+    height: 20%;
+    width: 40%;
+    content: "";
+    justify-self: center;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.content {
+    padding: 20px auto;
+    width: fit-content;
+    position: relative;
+    background-color: aqua;
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    position: absolute;
+    top: -130px;
+    justify-self: center;
+}
+
+.card > div:first-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+/* header profile */
+.header_profile {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 10px;
+}
+
+.header_profile img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    box-shadow:  0px 0px 20px rgba(255, 255, 255, 1);
+}
+
+.header_profile > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+}
+
+.header_profile > div p, svg, address {
+    color: gray;
+}
+
+.header_profile > div svg {
+    height: 20px;
+}
+
+.header_profile > div > div {
+    display: flex;
+    align-items: center;
+}
+
+.header_profile address {
+    display: flex;
+    align-items: center;
+}
+
+/* bouton d'action */
+button {
+    padding: 10px 100px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(30, 107, 249);
+    border: none;
+    width: 80%;
+}
+
+/* let's connect */
+.card > div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.card > div:nth-child(2) > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card > div:nth-child(2) svg {
+    width: fit-content;
+    height: 60px;
+}
+
+/* our team */
+.card > div:last-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.card > div:last-child > div {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    gap: 10px 20px;
+}
+
+.card > div:last-child > div img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    box-shadow:  0px 0px 10px rgb(30, 107, 249);
+}
+
+.card > div:last-child > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    text-transform: capitalize;
+}
+
+.card > div:last-child > div > div > p:first-child {
+    font-weight: 600;
+}
